@@ -43,13 +43,13 @@ Demo [下载链接](https://www.pgyer.com/NPJl) （密码：polyv）
 
 ## 4 WIKI文档
 
-### 4.1 [快速集成](./快速集成.md)
+### 4.1 [快速集成](https://github.com/polyv/polyv-android-webview-demo/blob/master/%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90.md)
 
 
-### 4.2 [高级文档](./高级文档.md)
+### 4.2 [高级文档](https://github.com/polyv/polyv-android-webview-demo/blob/master/%E9%AB%98%E7%BA%A7%E6%96%87%E6%A1%A3.md)
 
 
-### 4.3 [Q & A](./Q&A.md)
+### 4.3 [Q & A](https://github.com/polyv/polyv-android-webview-demo/blob/master/Q%26A.md)
 
 
 
@@ -61,4 +61,4 @@ Demo [下载链接](https://www.pgyer.com/NPJl) （密码：polyv）
 
 ## 6 更新日志
 
-[全版本更新记录](./CHANGELOG.md)
+[全版本更新记录](https://github.com/polyv/polyv-android-webview-demo/blob/master/CHANGELOG.md)

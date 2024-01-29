@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.plv.android.webviewdemo.PLVURLInputActivity" >
+
+	<TextView
+		android:id="@+id/title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:gravity="center_horizontal"
+		android:textSize="30dp"
+		android:textColor="#000000"
+		android:textStyle="bold"
+		android:text="WebView demo" />
+
+	<TextView
+		android:id="@+id/tv_type_1"
+		android:layout_below="@+id/title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:textSize="18sp"
+		android:textColor="#000"
+		android:text="方式一："/>
+
+	<EditText
+		android:id="@+id/goto_path"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tv_type_1"
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="15dp"
+		android:inputType="textMultiLine"
+		android:hint="输入URL"
+		android:textSize="14sp" />
+
+	<Button
+		android:id="@+id/goto_btn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/goto_path"
+		android:layout_centerHorizontal="true"
+		android:background="#E6e5ec"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		android:text="打开WebView"
+		android:textColor="#005EE3" />
+
+	<View
+		android:id="@+id/divider_1"
+		android:layout_marginTop="20dp"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_below="@id/goto_btn"
+		android:background="#ccc" />
+
+	<TextView
+		android:id="@+id/tv_type_2"
+		android:layout_below="@+id/divider_1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:textSize="18sp"
+		android:textColor="#000"
+		android:text="方式二：" />
+
+	<Button
+		android:id="@+id/code_btn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tv_type_2"
+		android:layout_centerHorizontal="true"
+		android:background="#E6e5ec"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		android:text="打开二维码扫描"
+		android:textColor="#005EE3" />
+
+	<View
+		android:id="@+id/divider_2"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_below="@id/code_btn"
+		android:layout_marginTop="20dp"
+		android:background="#ccc" />
+
+	<TextView
+		android:id="@+id/tv_ua"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/divider_2"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="15dp"
+		android:text="浏览器UA"
+		android:textColor="#000"
+		android:textSize="18sp" />
+
+	<EditText
+		android:id="@+id/ua_et"
+		android:layout_width="match_parent"
+		android:layout_height="88dp"
+		android:layout_below="@+id/tv_ua"
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="15dp"
+		android:layout_marginRight="10dp"
+		android:background="#E6e5ec"
+		android:gravity="top|left"
+		android:hint="输入UA"
+		android:inputType="textMultiLine"
+		android:padding="4dp"
+		android:textSize="14sp" />
+
+	<Button
+		android:id="@+id/reset_ua_btn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ua_et"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:background="#E6e5ec"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		android:text="重置UA"
+		android:textColor="#005EE3" />
+</RelativeLayout>

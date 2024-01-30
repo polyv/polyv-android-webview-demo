@@ -35,13 +35,6 @@
 > * 支持配置后台播放
 
 
-
-本项目的项目架构图如下：
-
-![](https://polyv-repo.oss-cn-shenzhen.aliyuncs.com/android/resource/plv_webview_sdk_demo_3.0%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84%E5%9B%BE.PNG)
-
-
-
 ## 2 环境要求
 
 | 名称           | 要求   |

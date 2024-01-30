@@ -25,21 +25,6 @@ public class PLVWebViewDemoActivity extends PLVWebViewBaseActivity {
     protected void initHandleForDemo() { // 初始化时，demo可以进行的自定义配置
     }
     */
-    @Override
-    protected void initHandleForDemo() {
-        floatableLayout.getWebView().registerHandler("监听事件", new BridgeHandler() {
-            @Override
-            public void handler(String s, CallBackFunction callBackFunction) {
-
-            }
-        });
-        floatableLayout.getWebView().callHandler("发送事件", "发送消息", new CallBackFunction() {
-            @Override
-            public void onCallBack(String s) {
-
-            }
-        });
-    }
 
     /**
     // 如需要监听js事件消息可以通过下面的方法进行对应处理 例如监听onShare()消息

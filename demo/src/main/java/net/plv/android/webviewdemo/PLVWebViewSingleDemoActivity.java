@@ -3,19 +3,18 @@ package net.plv.android.webviewdemo;
 import android.app.Activity;
 import android.content.Intent;
 
-import net.plv.android.jsbridge.BridgeHandler;
-import net.plv.android.jsbridge.CallBackFunction;
-import net.plv.android.webview.PLVWebViewBaseActivity;
+import net.plv.android.webview.PLVWebViewSingleActivity;
 import net.plv.android.webview.modules.floatablewebview.web.webviewconfig.config.PLVWebViewConfig;
 
 /**
- * 支持悬浮窗的WebView Activity
- * 用于展示悬浮小窗实现，保利威点直播视频H5播放，WebView基本配置，视频全屏等。
+ * Author:lzj
+ * Time:2023/12/29
+ * Description:
  */
-public class PLVWebViewDemoActivity extends PLVWebViewBaseActivity {
+public class PLVWebViewSingleDemoActivity extends PLVWebViewSingleActivity {
 
-    public static void startWebViewDemoActivity(Activity activity, PLVWebViewConfig config) {
-        Intent intent = new Intent(activity, PLVWebViewDemoActivity.class);
+    public static void startWebViewSingleDemoActivity(Activity activity, PLVWebViewConfig config) {
+        Intent intent = new Intent(activity, PLVWebViewSingleDemoActivity.class);
         intent.putExtra(PLV_WEB_VIEW_STATUS_CONFIG, config);
         activity.startActivity(intent);
     }
@@ -33,6 +32,4 @@ public class PLVWebViewDemoActivity extends PLVWebViewBaseActivity {
         super.onShare();
     }
      */
-
-
 }

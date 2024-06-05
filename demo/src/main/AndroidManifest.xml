@@ -21,19 +21,36 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         android:hardwareAccelerated="true" > <!-- Only works in API level 11+, and allows the HTML5 videos to play in-line -->
-        <activity android:name=".PLVURLInputActivity">
+
+        <activity android:name=".PLVEntranceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PLVWebViewDemoActivity"
+
+        <activity android:name=".PLVURLInputActivity">
+
+        </activity>
+
+
+        <activity android:name=".PLVWebViewSingleDemoActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:launchMode="singleTask">
+
+        </activity>
+
+        <activity android:name=".PLVFeedWebViewDemoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize"
             android:screenOrientation="portrait"
             android:launchMode="singleTask">
 
         </activity>
+
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
             android:screenOrientation="fullSensor"

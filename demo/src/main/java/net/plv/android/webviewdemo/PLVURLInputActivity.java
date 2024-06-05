@@ -30,6 +30,7 @@ public class PLVURLInputActivity extends Activity implements View.OnClickListene
     private Button codeBtn;
     private EditText uaEt;
     private Button resetUABtn;
+
     // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="生命周期">
@@ -62,9 +63,8 @@ public class PLVURLInputActivity extends Activity implements View.OnClickListene
                 config.setUrl(result.getContents())
                         .setUa(uaEt.getText().toString())
                         .setUseWebRequestPermission(false)
-                        .setSystemFloatingWindow(true)
                         .setSupportAutoFloating(false);
-                PLVWebViewDemoActivity.startWebViewDemoActivity(PLVURLInputActivity.this, config);
+                PLVWebViewSingleDemoActivity.startWebViewSingleDemoActivity(PLVURLInputActivity.this, config);
             }
         } else {
             super.onActivityResult(requestCode, resultCode, data);
@@ -81,13 +81,13 @@ public class PLVURLInputActivity extends Activity implements View.OnClickListene
                 Toast.makeText(PLVURLInputActivity.this, "请输入URL", Toast.LENGTH_SHORT).show();
                 return;
             }
+
             PLVWebViewConfig config = new PLVWebViewConfig();
             config.setUrl(url)
                     .setUa(uaEt.getText().toString())
                     .setUseWebRequestPermission(false)
-                    .setSystemFloatingWindow(true)
                     .setSupportAutoFloating(false);
-            PLVWebViewDemoActivity.startWebViewDemoActivity(PLVURLInputActivity.this, config);
+            PLVWebViewSingleDemoActivity.startWebViewSingleDemoActivity(PLVURLInputActivity.this, config);
         } else if (v.getId() == R.id.code_btn) {
             IntentIntegrator integrator = new IntentIntegrator(PLVURLInputActivity.this);
             integrator.setPrompt("扫描二维码");

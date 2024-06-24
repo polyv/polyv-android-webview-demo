@@ -8,6 +8,8 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.widget.Button;
 
+import net.plv.android.webview.modules.cache.Interceptor.PLVWebViewCacheInterceptor;
+import net.plv.android.webview.modules.cache.Interceptor.PLVWebViewCacheInterceptorInst;
 import net.plv.android.webview.modules.floatablewebview.web.webviewconfig.config.PLVWebViewConfig;
 
 import java.util.ArrayList;
@@ -61,6 +63,11 @@ public class PLVEntranceActivity extends AppCompatActivity implements View.OnCli
 
         entranceFeedWebViewBtn.setOnClickListener(this);
         entranceSingleWebViewBtn.setOnClickListener(this);
+
+        // 开启缓存策略
+        PLVWebViewCacheInterceptorInst.getInstance().init(
+                new PLVWebViewCacheInterceptor.Builder(this)
+        );
 
     }
 

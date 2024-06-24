@@ -6,8 +6,8 @@ android {
         applicationId "net.plv.webviewdemo"
         minSdkVersion 17
         targetSdkVersion 28
-        versionCode 30101
-        versionName "3.1.1"
+        versionCode 30200
+        versionName "3.2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
@@ -43,6 +43,6 @@ dependencies {
     //二维码功能依赖的包，仅用于入口页面扫描获取url
     api 'com.journeyapps:zxing-android-embedded:3.6.0'
     //这个包必须去依赖 - webviewSDK
-    api 'net.polyv.android:webView:3.1.1'
+    api 'net.polyv.android:webView:3.2.0'
 
 }

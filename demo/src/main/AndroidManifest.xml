@@ -15,6 +15,16 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
+    <!--连麦权限-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+
     <application
         android:icon="@mipmap/ic_launcher"
         android:networkSecurityConfig="@xml/plv_network_config"
@@ -36,7 +46,7 @@
 
 
         <activity android:name=".PLVWebViewSingleDemoActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"
             android:launchMode="singleTask">
@@ -44,7 +54,7 @@
         </activity>
 
         <activity android:name=".PLVFeedWebViewDemoActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="portrait"
             android:launchMode="singleTask">

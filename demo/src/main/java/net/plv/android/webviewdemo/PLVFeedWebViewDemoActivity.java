@@ -21,6 +21,9 @@ public class PLVFeedWebViewDemoActivity extends PLVWebViewFeedActivity {
 
     public static void startFeedWebViewDemoActivity(Activity activity, List<PLVWebViewConfig> resources) {
         Intent intent = new Intent(activity, PLVFeedWebViewDemoActivity.class);
+        // 关键代码
+        // 重新插入数据，在每次唤起Activity时，如需要更新数据则将isRefreshFeedData置为true
+        setRefreshFeedData(true);
         targetResources = resources;
         activity.startActivity(intent);
     }
@@ -34,7 +37,7 @@ public class PLVFeedWebViewDemoActivity extends PLVWebViewFeedActivity {
              * @return
              */
             @Override
-            public List<PLVWebViewConfig> reqeustNewResource() {
+            public List<PLVWebViewConfig> requestNewResource(int page) {
 
                 // 加载更多的数据
                 List<String> urls = new ArrayList<>(Arrays.asList(
